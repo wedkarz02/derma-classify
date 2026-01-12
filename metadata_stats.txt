@@ -1,0 +1,65 @@
+HAM10000 METADATA STATISTICS
+========================================
+
+Total images: 10015
+Unique lesions: 7470
+
+Diagnosis (dx) distribution:
+dx
+nv       6705
+mel      1113
+bkl      1099
+bcc       514
+akiec     327
+vasc      142
+df        115
+
+Diagnosis type (dx_type) distribution:
+dx_type
+histo        5340
+follow_up    3704
+consensus     902
+confocal       69
+
+Sex distribution:
+sex
+male       5406
+female     4552
+unknown      57
+
+Localization distribution:
+localization
+back               2192
+lower extremity    2077
+trunk              1404
+upper extremity    1118
+abdomen            1022
+face                745
+chest               407
+foot                319
+unknown             234
+neck                168
+scalp               128
+hand                 90
+ear                  56
+genital              48
+acral                 7
+
+Age summary:
+count    9958.000000
+mean       51.863828
+std        16.968614
+min         0.000000
+25%        40.000000
+50%        50.000000
+75%        65.000000
+max        85.000000
+
+Missing values per column:
+lesion_id        0
+image_id         0
+dx               0
+dx_type          0
+age             57
+sex              0
+localization     0
