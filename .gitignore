@@ -180,3 +180,6 @@ poetry.toml
 
 pip_cache/
 
+# dataset dir
+data/
+
