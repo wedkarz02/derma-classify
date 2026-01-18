@@ -1,11 +1,25 @@
 from pathlib import Path
 import pandas as pd
+import numpy as np
 import tensorflow as tf
 from sklearn.preprocessing import LabelEncoder
 
 DEFAULT_IMG_SIZE = (128, 128)
 DEFAULT_BATCH_SIZE = 32
 AUTOTUNE = tf.data.AUTOTUNE
+
+
+from sklearn.utils.class_weight import compute_class_weight
+import numpy as np
+
+
+def compute_class_weights(y, num_classes):
+    class_weights = compute_class_weight(
+        class_weight="balanced",
+        classes=np.arange(num_classes),
+        y=y,
+    )
+    return dict(enumerate(class_weights))
 
 
 def get_augmentation_layer():
@@ -75,3 +89,18 @@ def build_dataset(
 def build_image_paths(df, images_dir, image_col="image_id"):
     images_dir = Path(images_dir)
     return df[image_col].apply(lambda x: str(images_dir / f"{x}.jpg")).values
+
+
+def extract_features_from_dataset(dataset):
+    images = []
+    labels = []
+
+    for batch_images, batch_labels in dataset:
+        batch_images_flat = tf.reshape(batch_images, (batch_images.shape[0], -1))
+        images.append(batch_images_flat.numpy())
+        labels.append(batch_labels.numpy())
+
+    X = np.vstack(images)
+    y = np.concatenate(labels)
+
+    return X, y

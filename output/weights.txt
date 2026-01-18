@@ -1,0 +1,8 @@
+Class weights:
+akiec: 4.40
+bcc: 2.98
+bkl: 1.33
+df: 14.06
+mel: 1.28
+nv: 0.21
+vasc: 10.75
