@@ -7,7 +7,7 @@ from pathlib import Path
 def build_knn_model(X_train, y_train, X_val, y_val, n_neighbors=5):
     print(f"Training kNN with n_neighbors={n_neighbors}...")
 
-    knn = KNeighborsClassifier(n_neighbors=n_neighbors)
+    knn = KNeighborsClassifier(n_neighbors=n_neighbors, weights="distance")
     knn.fit(X_train, y_train)
 
     train_pred = knn.predict(X_train)

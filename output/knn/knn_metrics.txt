@@ -1,7 +1,7 @@
 kNN Results
 ==================================================
 Number of neighbors: 5
-Training accuracy: 0.7751
-Validation accuracy: 0.6717
-Training loss: 0.2249
-Validation loss: 0.3283
+Training accuracy: 1.0000
+Validation accuracy: 0.6761
+Training loss: 0.0000
+Validation loss: 0.3239

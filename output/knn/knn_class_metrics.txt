@@ -4,55 +4,55 @@ Per-class metrics for kNN
 Class: akiec
   True Positives: 5
   False Negatives: 63
-  False Positives: 20
-  Precision: 0.200
+  False Positives: 15
+  Precision: 0.250
   Recall: 0.074
-  F1-Score: 0.108
+  F1-Score: 0.114
 
 Class: bcc
-  True Positives: 39
-  False Negatives: 93
-  False Positives: 64
-  Precision: 0.379
-  Recall: 0.295
+  True Positives: 36
+  False Negatives: 96
+  False Positives: 49
+  Precision: 0.424
+  Recall: 0.273
   F1-Score: 0.332
 
 Class: bkl
-  True Positives: 83
-  False Negatives: 161
-  False Positives: 121
-  Precision: 0.407
-  Recall: 0.340
-  F1-Score: 0.371
+  True Positives: 78
+  False Negatives: 166
+  False Positives: 106
+  Precision: 0.424
+  Recall: 0.320
+  F1-Score: 0.364
 
 Class: df
   True Positives: 1
   False Negatives: 33
-  False Positives: 5
-  Precision: 0.167
+  False Positives: 6
+  Precision: 0.143
   Recall: 0.029
-  F1-Score: 0.050
+  F1-Score: 0.049
 
 Class: mel
-  True Positives: 20
-  False Negatives: 205
-  False Positives: 26
-  Precision: 0.435
-  Recall: 0.089
-  F1-Score: 0.148
+  True Positives: 18
+  False Negatives: 207
+  False Positives: 20
+  Precision: 0.474
+  Recall: 0.080
+  F1-Score: 0.137
 
 Class: nv
-  True Positives: 1223
-  False Negatives: 79
-  False Positives: 429
-  Precision: 0.740
-  Recall: 0.939
-  F1-Score: 0.828
+  True Positives: 1242
+  False Negatives: 60
+  False Positives: 458
+  Precision: 0.731
+  Recall: 0.954
+  F1-Score: 0.827
 
 Class: vasc
   True Positives: 0
   False Negatives: 36
-  False Positives: 5
+  False Positives: 7
   Precision: 0.000
   Recall: 0.000
   F1-Score: 0.000

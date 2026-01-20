@@ -1,0 +1,7 @@
+Epoch: 75
+Image size: (96, 96)
+Batch size: 64
+Train accuracy: 0.6091
+Val accuracy: 0.5924
+Train loss: 0.7785
+Val loss: 0.9741
