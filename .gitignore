@@ -182,3 +182,7 @@ pip_cache/
 # dataset dir
 data/
 
+.pdf
+.keras
+.json
+
